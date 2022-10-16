@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- ------------Home Screen -->
+        <div class="home_screen screen">
+            <!-- Title -->
+            <h1 class="title">
+                <span class="title_first"><span class="first_letter">T</span>ic</span><br>
+                <span class="title_second"><span class="first_letter">T</span>ac</span><br>
+                <span class="title_third"><span class="first_letter">T</span>oe</span><br>
+            </h1>
+            <!-- Btns  -->
+            <div class="btn_group">
+                <button class="btn" id="singlePlayBtn">Single</button>
+                <button class="btn" id="doublePlayBtn">Double</button>
+            </div>
+        </div>
+        <!-- ----------Select difficulty Screen -->
+        <div class="difficulty_screen screen hide">
+            <h1><span class="first_letter">S</span>elect <span class="first_letter">D</span>ifficulty</h1>
+            <div class="btn_group">
+                <button class="btn" id="easyBtn">Easy</button>
+                <button class="btn" id="mediumBtn">Medium</button>
+                <button class="btn" id="hardBtn">Hard</button>
+            </div>
+        </div>
+        <!-- ----------Play Screen GamePlay -->
+        <div class="play_screen hide">
+            <div class="top">
+                <h2 class="score_box1">Player Score <br><span class="score1">0</span></h2>
+                <button class="btn btn2" id="matchEnd">Match End</button>
+                <h2 class="score_box2">Player Score <br><span class="score2">0</span></h2>
+            </div>
+            <div class="center">
+                <!-- Grid  -->
+                <div class="grid">
+                    <div class="cell cell1"></div>
+                    <div class="cell cell2"></div>
+                    <div class="cell cell3"></div>
+                    <div class="cell cell4"></div>
+                    <div class="cell cell5"></div>
+                    <div class="cell cell6"></div>
+                    <div class="cell cell7"></div>
+                    <div class="cell cell8"></div>
+                    <div class="cell cell9"></div>
+                </div>
+                <!-- Match Complete Box -->
+                <div class="match_complete hide">
+                    <h1 class="winner_name">Player 1 Win</h1>
+                    <h3>Click Next Match Button OR Press Sapce To Next Match</h3>
+                    <button class="btn btn3" id="nextMatchBtn">Next Match</button>
+                </div>
+                <!-- Match End Box  -->
+                <div class="match_end hide">
+                    <h1 class="winner_name">Player 1 Win</h1>
+                    <div>
+                        <h2 class="Match_box">Total Matches<span class="match_number">0</span></h2>
+                        <h2 class="player1wins">Player 1 Wins <span>0</span></h2>
+                        <h2 class="player2wins">Player 2 Wins <span>0</span></h2>
+                        <h2>Draw <span class="draw">0</span></h2>
+                        <h2>Incomplete Match <span class="incomplete_match">0</span></h2>
+                    </div>
+                    <h3>Click Replay Button OR Press Space To Replay</h3>
+                    <div class="btn-group">
+                        <button class="btn btn3" id="homeBtn">Home</button>
+                        <button class="btn btn3" id="replayBtn">Replay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="sign_box">
+                    <img src="images/x2.png" class="sign1">
+                    <h2 class="name_plate1">Player Name</h2>
+                </div>
+                <h2 class="turn_status_box">Turn <br> <span class="turn_status">Player Name <img src="images/o2.png"></span></h2>
+                <div class="sign_box">
+                    <img src="images/o2.png" class="sign2">
+                    <h2 class="name_plate2">Player Name</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Script  -->
+    <script src="script.js"></script>
+</body>
+</html>
